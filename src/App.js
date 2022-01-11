@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, AppBar, Card, CardActions, CardContent, CardMedia, CssBaseline, Grid, Toolbar, Container } from '@material-ui/core';
+import { Typography, AppBar, Card, Button, CardActions, CardContent, CardMedia, CssBaseline, Grid, Toolbar, Container } from '@material-ui/core';
 import { PhotoCamera } from '@material-ui/icons';
 
 const App = () => {
@@ -15,9 +15,26 @@ const App = () => {
       <main>
         <div>
           <Container maxWidth='sm'>
-            <Typography variant='h2' color='textPrimary' align='center'>
+            <Typography variant='h2' color='textPrimary' align='center' gutterBottom>
               Photo Album
             </Typography>
+            <Typography variant='h5' color='textSecondary' align='center' paragraph>
+              Hello everyone,this is a photo album and i'm trying to make this sentence as long as possible.
+            </Typography>
+            <div>
+              <Grid container spacing={2} justify='center'>
+                <Grid item>
+                  <Button variant='contained' color='primary'>
+                    See my photos
+                  </Button>
+                </Grid>
+                <Grid item>
+                  <Button variant='outlined' color='primary'>
+                    Secondary action
+                  </Button>
+                </Grid>
+              </Grid>
+            </div>
           </Container>
         </div>
       </main>
